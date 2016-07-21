@@ -10,7 +10,7 @@ def taxcalc(price):
         raise ValueError("{} is not a valid price input".format(price))
 
     if p < 0:
-        return 0
+        return p
     else:
         tax = p * 0.13
         # Round up to two decimal places
